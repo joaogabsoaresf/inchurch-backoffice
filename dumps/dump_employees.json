@@ -1,0 +1,394 @@
+[
+{
+  "model": "employees.employee",
+  "pk": 1,
+  "fields": {
+    "google_user_id": "103507936873035575450",
+    "full_name": "João Gabriel Soares",
+    "email": "joao.soares@inchurch.com.br",
+    "role": "superadmin",
+    "team": "[\"tech\"]",
+    "is_onboarded": false,
+    "created_at": "2025-03-31T17:21:49.406Z",
+    "updated_at": "2025-04-10T14:06:38.403Z"
+  }
+},
+{
+  "model": "employees.employee",
+  "pk": 2,
+  "fields": {
+    "google_user_id": "109963299171151930448",
+    "full_name": "Lucas Merlim",
+    "email": "lucas.merlim@inchurch.com.br",
+    "role": "superadmin",
+    "team": "[\"tech\"]",
+    "is_onboarded": false,
+    "created_at": "2025-04-01T17:47:30.115Z",
+    "updated_at": "2025-04-10T14:06:30.157Z"
+  }
+},
+{
+  "model": "employees.employee",
+  "pk": 3,
+  "fields": {
+    "google_user_id": "100918114493453773545",
+    "full_name": "Igor Santos",
+    "email": "igor.santos@inchurch.com.br",
+    "role": "basic",
+    "team": "[\"bi\"]",
+    "is_onboarded": false,
+    "created_at": "2025-04-01T18:43:24.589Z",
+    "updated_at": "2025-04-10T14:06:22.018Z"
+  }
+},
+{
+  "model": "employees.employee",
+  "pk": 4,
+  "fields": {
+    "google_user_id": "112866936711850505378",
+    "full_name": "Termos inChurch",
+    "email": "termos@inchurch.com.br",
+    "role": "admin",
+    "team": "[\"marketing\", \"sara\"]",
+    "is_onboarded": false,
+    "created_at": "2025-04-02T17:50:41.749Z",
+    "updated_at": "2025-04-15T23:02:40.161Z"
+  }
+},
+{
+  "model": "employees.employee",
+  "pk": 5,
+  "fields": {
+    "google_user_id": "114433250386711559565",
+    "full_name": "Davi Machado",
+    "email": "davi.machado@inchurch.com.br",
+    "role": "basic",
+    "team": "[\"finance\", \"bi\"]",
+    "is_onboarded": false,
+    "created_at": "2025-04-03T14:20:25.431Z",
+    "updated_at": "2025-04-10T14:06:13.508Z"
+  }
+},
+{
+  "model": "employees.employee",
+  "pk": 6,
+  "fields": {
+    "google_user_id": "115978505156096750398",
+    "full_name": "Felipe Teixeira",
+    "email": "shander.teixeira@inchurch.com.br",
+    "role": "basic",
+    "team": "[\"support\"]",
+    "is_onboarded": false,
+    "created_at": "2025-04-03T20:42:07.618Z",
+    "updated_at": "2025-04-10T14:06:04.010Z"
+  }
+},
+{
+  "model": "employees.employee",
+  "pk": 7,
+  "fields": {
+    "google_user_id": "114496723708544134844",
+    "full_name": "Noemi Garcia",
+    "email": "noemi.garcia@inchurch.com.br",
+    "role": "basic",
+    "team": "[\"cs\"]",
+    "is_onboarded": false,
+    "created_at": "2025-04-04T17:59:17.668Z",
+    "updated_at": "2025-04-10T14:05:47.392Z"
+  }
+},
+{
+  "model": "employees.employee",
+  "pk": 8,
+  "fields": {
+    "google_user_id": "101798616108949423968",
+    "full_name": "Rafael Reis",
+    "email": "rafael.reis@inchurch.com.br",
+    "role": "basic",
+    "team": "[\"tech\"]",
+    "is_onboarded": false,
+    "created_at": "2025-04-08T21:56:46.005Z",
+    "updated_at": "2025-04-10T14:05:38.189Z"
+  }
+},
+{
+  "model": "employees.employee",
+  "pk": 9,
+  "fields": {
+    "google_user_id": "106912068955168276410",
+    "full_name": "Tiago Triani",
+    "email": "tiago.triani@inchurch.com.br",
+    "role": "basic",
+    "team": "[\"support\"]",
+    "is_onboarded": false,
+    "created_at": "2025-04-09T12:51:37.625Z",
+    "updated_at": "2025-04-10T14:05:26.508Z"
+  }
+},
+{
+  "model": "employees.employee",
+  "pk": 10,
+  "fields": {
+    "google_user_id": "112020963762268541842",
+    "full_name": "Maria Laura Zanini",
+    "email": "marialaura.zanini@inchurch.com.br",
+    "role": "admin",
+    "team": "[\"sara\"]",
+    "is_onboarded": false,
+    "created_at": "2025-04-10T19:15:23.021Z",
+    "updated_at": "2025-04-10T20:17:57.223Z"
+  }
+},
+{
+  "model": "employees.employee",
+  "pk": 11,
+  "fields": {
+    "google_user_id": "104309194582227102656",
+    "full_name": "Dayane Colonia",
+    "email": "dayane.colonia@inchurch.com.br",
+    "role": "admin",
+    "team": "[\"sales\"]",
+    "is_onboarded": false,
+    "created_at": "2025-04-10T19:56:28.799Z",
+    "updated_at": "2025-04-10T20:03:18.918Z"
+  }
+},
+{
+  "model": "employees.employee",
+  "pk": 12,
+  "fields": {
+    "google_user_id": "104355012038201934148",
+    "full_name": "Franciele Lourenco",
+    "email": "franciele.lourenco@inchurch.com.br",
+    "role": "basic",
+    "team": "[\"sales\"]",
+    "is_onboarded": false,
+    "created_at": "2025-04-10T19:57:05.674Z",
+    "updated_at": "2025-04-10T20:03:25.133Z"
+  }
+},
+{
+  "model": "employees.employee",
+  "pk": 13,
+  "fields": {
+    "google_user_id": "108498059740776807368",
+    "full_name": "Thiago Fortes",
+    "email": "thiago.fortes@inchurch.com.br",
+    "role": "basic",
+    "team": "[]",
+    "is_onboarded": false,
+    "created_at": "2025-04-10T20:13:22.445Z",
+    "updated_at": "2025-04-10T20:13:22.445Z"
+  }
+},
+{
+  "model": "employees.employee",
+  "pk": 14,
+  "fields": {
+    "google_user_id": "100066402035956031940",
+    "full_name": "Fabiano Lomar",
+    "email": "fabiano.lomar@inchurch.com.br",
+    "role": "basic",
+    "team": "[\"sales\"]",
+    "is_onboarded": false,
+    "created_at": "2025-04-10T20:32:17.559Z",
+    "updated_at": "2025-04-10T20:33:01.111Z"
+  }
+},
+{
+  "model": "employees.employee",
+  "pk": 15,
+  "fields": {
+    "google_user_id": "105240391402201472891",
+    "full_name": "Wesley Leite",
+    "email": "wesley.leite@inchurch.com.br",
+    "role": "basic",
+    "team": "[]",
+    "is_onboarded": false,
+    "created_at": "2025-04-10T20:50:50.350Z",
+    "updated_at": "2025-04-10T20:50:50.350Z"
+  }
+},
+{
+  "model": "employees.employee",
+  "pk": 16,
+  "fields": {
+    "google_user_id": "109975650107106386891",
+    "full_name": "Thais Frade",
+    "email": "thais.frade@inchurch.com.br",
+    "role": "basic",
+    "team": "[]",
+    "is_onboarded": false,
+    "created_at": "2025-04-10T21:38:34.378Z",
+    "updated_at": "2025-04-10T21:38:34.379Z"
+  }
+},
+{
+  "model": "employees.employee",
+  "pk": 17,
+  "fields": {
+    "google_user_id": "102611579792683579215",
+    "full_name": "Daniel Sidney",
+    "email": "daniel.sidney@inchurch.com.br",
+    "role": "basic",
+    "team": "[]",
+    "is_onboarded": false,
+    "created_at": "2025-04-11T20:35:01.354Z",
+    "updated_at": "2025-04-11T20:35:01.354Z"
+  }
+},
+{
+  "model": "employees.employee",
+  "pk": 18,
+  "fields": {
+    "google_user_id": "118301346224944101065",
+    "full_name": "Ana Mesquita",
+    "email": "ana.mesquita@inchurch.com.br",
+    "role": "basic",
+    "team": "[]",
+    "is_onboarded": false,
+    "created_at": "2025-04-17T18:01:14.252Z",
+    "updated_at": "2025-04-17T18:01:14.252Z"
+  }
+},
+{
+  "model": "employees.employee",
+  "pk": 19,
+  "fields": {
+    "google_user_id": "106137086223759495963",
+    "full_name": "Patrícia Silva",
+    "email": "patricia.silva@inchurch.com.br",
+    "role": "basic",
+    "team": "[]",
+    "is_onboarded": false,
+    "created_at": "2025-04-22T14:04:02.320Z",
+    "updated_at": "2025-04-22T14:04:02.320Z"
+  }
+},
+{
+  "model": "employees.employee",
+  "pk": 20,
+  "fields": {
+    "google_user_id": "100167824545715109255",
+    "full_name": "Marina Machado",
+    "email": "marina.machado@inchurch.com.br",
+    "role": "basic",
+    "team": "[]",
+    "is_onboarded": false,
+    "created_at": "2025-04-22T14:07:05.601Z",
+    "updated_at": "2025-04-22T14:07:05.601Z"
+  }
+},
+{
+  "model": "employees.employee",
+  "pk": 21,
+  "fields": {
+    "google_user_id": "118399484302528972137",
+    "full_name": "Raphael Loera",
+    "email": "raphael.loera@inchurch.com.br",
+    "role": "basic",
+    "team": "[]",
+    "is_onboarded": false,
+    "created_at": "2025-04-22T14:41:43.991Z",
+    "updated_at": "2025-04-22T14:41:43.991Z"
+  }
+},
+{
+  "model": "employees.employee",
+  "pk": 22,
+  "fields": {
+    "google_user_id": "109330247300346974282",
+    "full_name": "Gabriel Knust",
+    "email": "gabriel.knust@inchurch.com.br",
+    "role": "basic",
+    "team": "[]",
+    "is_onboarded": false,
+    "created_at": "2025-04-22T14:49:49.876Z",
+    "updated_at": "2025-04-22T14:49:49.876Z"
+  }
+},
+{
+  "model": "employees.employee",
+  "pk": 23,
+  "fields": {
+    "google_user_id": "109907056043610318113",
+    "full_name": "Robson Santana",
+    "email": "robson.santana@inchurch.com.br",
+    "role": "basic",
+    "team": "[]",
+    "is_onboarded": false,
+    "created_at": "2025-04-22T15:02:48.680Z",
+    "updated_at": "2025-04-22T15:02:48.680Z"
+  }
+},
+{
+  "model": "employees.employee",
+  "pk": 24,
+  "fields": {
+    "google_user_id": "115816692797250552884",
+    "full_name": "Thalles Borges",
+    "email": "thalles.borges@inchurch.com.br",
+    "role": "basic",
+    "team": "[]",
+    "is_onboarded": false,
+    "created_at": "2025-04-22T15:57:05.328Z",
+    "updated_at": "2025-04-22T15:57:05.328Z"
+  }
+},
+{
+  "model": "employees.employee",
+  "pk": 25,
+  "fields": {
+    "google_user_id": "101304890067358697447",
+    "full_name": "Nathalia Lopes",
+    "email": "nathalia.lopes@inchurch.com.br",
+    "role": "basic",
+    "team": "[]",
+    "is_onboarded": false,
+    "created_at": "2025-04-22T15:57:30.242Z",
+    "updated_at": "2025-04-22T15:57:30.242Z"
+  }
+},
+{
+  "model": "employees.employee",
+  "pk": 26,
+  "fields": {
+    "google_user_id": "116717180137202665814",
+    "full_name": "Paulo Sanches",
+    "email": "paulo.sanches@inchurch.com.br",
+    "role": "basic",
+    "team": "[]",
+    "is_onboarded": false,
+    "created_at": "2025-04-22T16:00:09.914Z",
+    "updated_at": "2025-04-22T16:00:09.914Z"
+  }
+},
+{
+  "model": "employees.employee",
+  "pk": 27,
+  "fields": {
+    "google_user_id": "114107737647646272089",
+    "full_name": "Pedro Assis",
+    "email": "pedro.assis@inchurch.com.br",
+    "role": "basic",
+    "team": "[]",
+    "is_onboarded": false,
+    "created_at": "2025-04-22T16:01:25.449Z",
+    "updated_at": "2025-04-22T16:01:25.449Z"
+  }
+},
+{
+  "model": "employees.employee",
+  "pk": 28,
+  "fields": {
+    "google_user_id": "105350556203240569176",
+    "full_name": "Paulo Vinicios",
+    "email": "paulo.vinicios@inchurch.com.br",
+    "role": "basic",
+    "team": "[]",
+    "is_onboarded": false,
+    "created_at": "2025-04-22T16:02:14.281Z",
+    "updated_at": "2025-04-22T16:02:14.281Z"
+  }
+}
+]
