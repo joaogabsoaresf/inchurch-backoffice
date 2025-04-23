@@ -15,8 +15,8 @@ Antes de iniciar, certifique-se de ter instalado em sua máquina:
 ### 1. Clonar o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/seu-projeto.git
-cd seu-projeto
+git clone https://github.com/joaogabsoaresf/inchurch-backoffice.git
+cd inchurch-backoffice
 ```
 
 ### 2. Criar e ativar o ambiente virtual
