@@ -74,6 +74,11 @@ INSTALLED_APPS = [
     "apps.nome_do_app",
 ]
 ```
+
+#
+### Pronto! Agora você pode começar a desenvolver 🚀
 #
 
-### Pronto! Agora você pode começar a desenvolver 🚀
+#### Links Úteis:
+- [Django Ninja](https://django-ninja.dev)
+- [Docker](https://docs.docker.com/engine/install/)
