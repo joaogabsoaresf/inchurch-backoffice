@@ -77,6 +77,8 @@ INSTALLED_APPS = [
 
 #
 ### Pronto! Agora você pode começar a desenvolver 🚀
+#### A documentação vai estar disponível em:
+#### `http://localhost:8000/api/v1/docs`
 #
 
 #### Links Úteis:
