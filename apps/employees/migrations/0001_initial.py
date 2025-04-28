@@ -15,13 +15,13 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Employee',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('is_active', models.BooleanField(default=True, editable=False)),
-                ('google_user_id', models.CharField(db_index=True, max_length=100, unique=True)),
+                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),  # noqa
+                ('is_active', models.BooleanField(default=True, editable=False)),  # noqa
+                ('google_user_id', models.CharField(db_index=True, max_length=100, unique=True)),  # noqa
                 ('full_name', models.CharField(max_length=255)),
                 ('email', models.EmailField(max_length=254, unique=True)),
-                ('role', models.CharField(choices=[('superadmin', 'Super Admin'), ('admin', 'Admin'), ('basic', 'Básico')], default='basic', max_length=20, null=True)),
-                ('team', django.contrib.postgres.fields.ArrayField(base_field=models.CharField(choices=[('marketing', 'Marketing'), ('sales', 'Vendas'), ('cs', 'CS'), ('support', 'Suporte'), ('finance', 'Financeiro'), ('bi', 'BI'), ('hr', 'RH'), ('tech', 'Tecnologia'), ('other', 'Outro'), ('sara', 'Sara')], max_length=50), blank=True, default=list, size=None)),
+                ('role', models.CharField(choices=[('superadmin', 'Super Admin'), ('admin', 'Admin'), ('basic', 'Básico')], default='basic', max_length=20, null=True)),  # noqa
+                ('team', django.contrib.postgres.fields.ArrayField(base_field=models.CharField(choices=[('marketing', 'Marketing'), ('sales', 'Vendas'), ('cs', 'CS'), ('support', 'Suporte'), ('finance', 'Financeiro'), ('bi', 'BI'), ('hr', 'RH'), ('tech', 'Tecnologia'), ('other', 'Outro'), ('sara', 'Sara')], max_length=50), blank=True, default=list, size=None)),  # noqa
                 ('is_onboarded', models.BooleanField(default=False)),
                 ('created_at', models.DateTimeField(auto_now_add=True)),
                 ('updated_at', models.DateTimeField(auto_now=True)),

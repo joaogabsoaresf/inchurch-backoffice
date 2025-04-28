@@ -1,8 +1,11 @@
 import json
 import threading
+
 from django.utils.timezone import now
-from apps.logs.models import Logs, check_sensitive
+
 from apps.employees.models.employee import Employee
+from apps.logs.models import Logs, check_sensitive
+
 
 class RequestLoggingMiddleware:
     def __init__(self, get_response):
@@ -27,8 +30,8 @@ class RequestLoggingMiddleware:
     def save_log_async(self, request, response, request_data):
         def _save():
             try:
-                google_user_id = request_data['request_headers'].get('Authorization', '')
-                employee = Employee.objects.filter(google_user_id=google_user_id).first()
+                google_user_id = request_data['request_headers'].get('Authorization', '')  # noqa
+                employee = Employee.objects.filter(google_user_id=google_user_id).first()  # noqa
 
                 action = f"{request_data['method']} {request_data['path']}"
                 if 'method' in request_data['request_body']:
@@ -42,7 +45,7 @@ class RequestLoggingMiddleware:
                     response_body=self.get_response_body(response),
                     response_headers=dict(response.items()),
                     status_code=response.status_code,
-                    is_senstive=check_sensitive(request_data['request_body'].get('method', '')),
+                    is_senstive=check_sensitive(request_data['request_body'].get('method', '')),  # noqa
                 )
 
                 logs.save()
@@ -51,7 +54,7 @@ class RequestLoggingMiddleware:
                 # Salvar log mínimo mesmo se ocorrer erro
                 try:
                     Logs.objects.create(
-                        action=f"{request_data['method']} {request_data['path']}",
+                        action=f"{request_data['method']} {request_data['path']}",  # noqa
                         request_body=request_data['request_body'],
                         request_headers=request_data['request_headers'],
                         status_code=getattr(response, 'status_code', 0),
@@ -72,7 +75,7 @@ class RequestLoggingMiddleware:
 
     def get_response_body(self, response):
         try:
-            if hasattr(response, 'content') and response.get('Content-Type', '').startswith('application/json'):
+            if hasattr(response, 'content') and response.get('Content-Type', '').startswith('application/json'):  # noqa
                 return json.loads(response.content.decode('utf-8') or '{}')
         except Exception:
             pass

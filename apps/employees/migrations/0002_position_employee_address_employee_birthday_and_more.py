@@ -14,8 +14,8 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Position',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('is_active', models.BooleanField(default=True, editable=False)),
+                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),  # noqa
+                ('is_active', models.BooleanField(default=True, editable=False)),  # noqa
                 ('created_at', models.DateTimeField(auto_now_add=True)),
                 ('updated_at', models.DateTimeField(auto_now=True)),
                 ('title', models.CharField(max_length=50)),
@@ -59,14 +59,14 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='EmployeePosition',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('is_active', models.BooleanField(default=True, editable=False)),
+                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),  # noqa
+                ('is_active', models.BooleanField(default=True, editable=False)),  # noqa
                 ('created_at', models.DateTimeField(auto_now_add=True)),
                 ('updated_at', models.DateTimeField(auto_now=True)),
                 ('start_date', models.DateField()),
                 ('end_date', models.DateField()),
-                ('employee', models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, to='employees.employee')),
-                ('position', models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, to='employees.position')),
+                ('employee', models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, to='employees.employee')),  # noqa
+                ('position', models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, to='employees.position')),  # noqa
             ],
             options={
                 'abstract': False,
@@ -75,15 +75,15 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Salarie',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('is_active', models.BooleanField(default=True, editable=False)),
+                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),  # noqa
+                ('is_active', models.BooleanField(default=True, editable=False)),  # noqa
                 ('created_at', models.DateTimeField(auto_now_add=True)),
                 ('updated_at', models.DateTimeField(auto_now=True)),
                 ('amount', models.FloatField()),
                 ('currency', models.CharField()),
                 ('start_date', models.DateField()),
                 ('end_date', models.DateField()),
-                ('employee', models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, to='employees.employee')),
+                ('employee', models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, to='employees.employee')),  # noqa
             ],
             options={
                 'abstract': False,
