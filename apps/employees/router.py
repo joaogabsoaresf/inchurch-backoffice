@@ -7,7 +7,8 @@ from ninja.pagination import paginate
 from apps.base.pagination import CustomPagination
 from apps.employees.models.cards import Card
 from apps.employees.models.employee import Employee
-from apps.employees.schemas import CardData, EmployeeIn, EmployeeOut
+from apps.employees.schemas import (CardDataIn, CardDataOut, EmployeeIn,
+                                    EmployeeOut)
 
 
 class NoContent(Schema):
@@ -63,21 +64,15 @@ def delete_employee(request, employee_id: int):
     return 204
 
 
-@router.post('/cards', response={201: dict})
-def create_card(request, payload: CardData):
+@router.post('/cards/', response=CardDataOut)
+def create_card(request, payload: CardDataIn):
     # Save the incoming data to the Card model
     card = Card.objects.create(
-        card_id=payload.card_id,
         title=payload.title,
         description=payload.description,
-        request_type=payload.requestType,
+        request_type=payload.request_type,
         recipient=payload.recipient,
         status=payload.status,
-        created_at=payload.createdAt,
-        created_by=payload.createdBy
+        created_by=payload.created_by
     )
-    return 201, {
-        "card_id": card.card_id,
-        "title": card.title,
-        "status": card.status
-    }
+    return card

@@ -38,12 +38,21 @@ class EmployeeOut(Schema):
     updated_at: datetime
 
 
-class CardData(Schema):
-    card_id: str
+class CardDataIn(Schema):
     title: str
     description: str
-    requestType: str
+    request_type: str
     recipient: str
     status: str
-    createdAt: datetime
-    createdBy: str
+    created_by: str
+
+
+class CardDataOut(Schema):
+    id: int
+    title: str
+    description: str
+    request_type: str
+    recipient: str
+    status: str
+    created_at: datetime
+    created_by: str

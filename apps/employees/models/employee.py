@@ -6,9 +6,9 @@ from apps.employees.choices import RoleChoices, TeamChoices
 
 
 class Employee(TimestampedModel):
-    google_user_id = models.CharField(max_length=100, unique=True, db_index=True)  # noqa
+    google_user_id = models.CharField(max_length=100, unique=True, db_index=True, null=True)  # noqa
     full_name = models.CharField(max_length=255)
-    email = models.EmailField(unique=True)
+    email = models.EmailField(unique=True, null=True)
     role = models.CharField(max_length=40, choices=RoleChoices.choices, null=True, default=RoleChoices.BASIC)  # noqa
     team = ArrayField(
             models.CharField(max_length=50, choices=TeamChoices.choices),
