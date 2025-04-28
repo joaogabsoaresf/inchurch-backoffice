@@ -22,7 +22,7 @@ SECRET_KEY = s.SECRET_KEY
 
 DEBUG = s.ENV == 'LOCAL'
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 INSTALLED_APPS = [
     'django.contrib.admin',

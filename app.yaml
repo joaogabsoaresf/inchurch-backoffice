@@ -1,0 +1,6 @@
+runtime: python312
+entrypoint: gunicorn -b 0.0.0.0:$PORT config.wsgi:application --timeout 90
+service: backoffice
+handlers:
+  - url: /.*
+    script: auto
