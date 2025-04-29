@@ -2,4 +2,5 @@ django-cors-headers>=4.7.0, <4.8
 django-ninja>=1.4.1, <1.5
 gunicorn>=21.2.0, <21.3
 psycopg2-binary>=2.9.10, <2.10
+pypdf>=5.4.0, <5.5
 python-dotenv>=1.1.0, <1.2

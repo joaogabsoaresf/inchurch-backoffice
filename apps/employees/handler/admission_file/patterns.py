@@ -1,0 +1,21 @@
+pj = {
+    "Nome": r"Nome do Funcionário:\s*(.*?)(?=\s*Razão Social)",
+    "Razão Social": r"Razão Social:\s*(.*?)(?=\s*CNPJ)",
+    "Documento": r"CNPJ:\s*(.*?)(?=\s*Data Inicio do Contrato)",
+    "Data de Início do contrato": r"Data Inicio do Contrato:\s*(\d{2}/\d{2}/\d{4})",
+    "Endereço": r"Endereço:\s*(.*?)(?=\s*Bairro)",
+    "Bairro": r"Bairro:\s*(.*?)(?=\s*Cidade)",
+    "Cidade": r"Cidade:\s*(.*?)(?=\s*Estado)",
+    "Estado": r"Estado:\s*(.*?)(?=\s*CEP)",
+    "CEP": r"CEP:\s*(\d{5}-\d{3})",
+    "CPF": r"CPF:\s*(\d{3}\.\d{3}\.\d{3}-\d{2})",
+    "RG": r"RG:\s*(\d+)",
+    "Telefone": r"Telefone:\s*(\+?[0-9\(\)\-\s]+)",
+    "PIX": r"PIX:\s*(\d+)",
+    "Data de Nascimento": r"Data de Nascimento:\s*(\d{2}/\d{2}/\d{4})",
+    "Nacionalidade": r"Nacionalidade:\s*(\w+)",
+    "Função": r"Função:\s*([^\n]+)",
+    "Filhos": r"Filhos menores de 14 anos \(opcional\):\s*(.*?)\s*Dados bancários:",
+    "Dados Bancários": r"Dados bancários:\s*(Banco:.*?)(?=\s*PIX)",
+    "Salário": r"Remuneração:\s*([\d\.,]+)"
+}
