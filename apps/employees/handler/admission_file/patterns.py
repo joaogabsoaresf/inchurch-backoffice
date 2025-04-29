@@ -21,7 +21,7 @@ pj = {
 }
 
 clt = {
-    "Contratação": r"FICHA DE ADMISSÃO",
+    "Contratação": r"(CLT)",
     "Nome": r"Nome do Funcionário:\s*(.*?)(?=\s*Data Admissão)",
     "Data de Admissão": r"Data Admissão:\s*(\d{2}/\d{2}/\d{4})",
     "Salário": r"Salário:\s*R\$?\s*([\d\.,]+)",
