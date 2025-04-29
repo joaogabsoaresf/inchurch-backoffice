@@ -11,7 +11,7 @@ help:
 
 run:
 	@echo "🚀 Iniciando servidor..."
-	python manage.py runserver
+	DJANGO_ENV=local python manage.py runserver
 
 migrate:
 	@echo "📦 Aplicando migrações..."
