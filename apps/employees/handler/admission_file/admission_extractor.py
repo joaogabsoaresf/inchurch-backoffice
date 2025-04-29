@@ -1,5 +1,5 @@
 from utils.pdf_parse import PdfExtractor
-from apps.employees.handler.admission_file.patterns import pj
+from apps.employees.handler.admission_file.patterns import pj, clt
 
 class FileAdmissionExtractor(PdfExtractor):
     def __init__(self, file_path_or_bytes):
@@ -8,3 +8,8 @@ class FileAdmissionExtractor(PdfExtractor):
     def extract_pj(self):
         extracted_fields = self.extract_fields(pj)
         return extracted_fields
+    
+    def extract_clt(self):
+        extracted_fields = self.extract_fields(clt)
+        return extracted_fields
+

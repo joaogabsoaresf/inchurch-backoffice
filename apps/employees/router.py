@@ -66,4 +66,4 @@ def create_card(request, payload: CardDataIn):
 def upload(request, file: UploadedFile = File(...)):
     data = file.read()
     pdf_extractor = FileAdmissionExtractor(data)
-    return {"result":pdf_extractor.extract_pj()}
+    return {"result":pdf_extractor.extract_clt()}

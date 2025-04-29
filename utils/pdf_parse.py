@@ -27,7 +27,9 @@ class PdfExtractor:
     def extract_data(self, pattern):
         match = re.search(pattern, self.text)
         if match:
-            return match.group(1).strip()  # Retorna o valor capturado
+            if match.lastindex:
+                return match.group(1).strip()
+            return match.group(0).strip()
         return "N/A"
 
     def extract_fields(self, patterns):

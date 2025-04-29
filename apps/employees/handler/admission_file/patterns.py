@@ -19,3 +19,27 @@ pj = {
     "Dados Bancários": r"Dados bancários:\s*(Banco:.*?)(?=\s*PIX)",
     "Salário": r"Remuneração:\s*([\d\.,]+)"
 }
+
+clt = {
+    "Contratação": r"FICHA DE ADMISSÃO",
+    "Nome": r"Nome do Funcionário:\s*(.*?)(?=\s*Data Admissão)",
+    "Data de Admissão": r"Data Admissão:\s*(\d{2}/\d{2}/\d{4})",
+    "Salário": r"Salário:\s*R\$?\s*([\d\.,]+)",
+    "Data de Nascimento": r"Data Nasc\.\s*:\s*(\d{2}/\d{2}/\d{4})",
+    "Estado Civil": r"Estado Civil:\s*(\w+)",
+    "Endereço": r"Endereço:\s*(.*?)\s*N°\.\s*\d+",
+    "Estado": r"Estado:\s*(.*?)(?=\s*CEP)",
+    "CEP": r"CEP:\s*(\d{5}-\d{3})",
+    "Documento": r"CPF:\s*(\d{3}\.\d{3}\.\d{3}-\d{2})",
+    "RG": r"RG:\s*(\d+)",
+    "CTPS": r"CTPS n°\.\s*:\s*(\d+)",
+    "PIS": r"PIS:\s*(\d{2}\.\d{3}\.\d{3}\.\d{3})",
+    "Nacionalidade": r"Nacionalidade:\s*(\w+)",
+    "Raça": r"Raça:\s*(\w+)",
+    "Telefone": r"TEL\.:?\s*(\+?[0-9\(\)\-\s]+)",
+    "Função": r"Função:\s*([^\n]+)",
+    "Filhos": r"Filhos menores de 14 anos \(opcional\):\s*(.*?)\s*Dados bancários",
+    "Conta Itaú": r"Possui conta corrente Itaú:\s*(Sim|Não)",
+    "Dados Bancários": r"Banco:\s*(\d+)\s*Agência:\s*(\d+)\s*nº da conta:\s*(\d+)\s*Tipo de conta:\s*([^\n]+)",
+    "PIX": r"PIX:\s*(\d+)",
+}
